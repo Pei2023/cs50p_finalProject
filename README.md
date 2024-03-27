@@ -3,6 +3,11 @@
 1. How to execute the program: https://youtu.be/1H264J1rJT0?si=SFr60hnnw8h7CNSS
 ## Description:
 
+How to execute: 
+```
+python project.py {firstphotoFirectory} {secondphotoFirectory} {thirdphotoFirectory} {forthphotoFirectory}
+```
+
 &nbsp;&nbsp;&nbsp;&nbsp;The goal of this project is to generate a little story by merging the four uploaded images and the text description for each image. The procedure includes:
 1. Specify four images file while executing the python file.
 2. Get the minimum width and minimum height among the four images, and set them as the unified width and the unified height.
@@ -25,9 +30,5 @@ The flow to make a little story:
 To make sure the font size won't be too small when the size of the uploaded image is too large, we need to set the size of font and the size of image in propotion. The ration between image area and font area is set 593.4. \
 Calculate the font size: $\sqrt{(unifiedImageWidth * unifiedImageHeight) / 593.4}$
 
-
-### ***Documentation***
-1. [Check the ***functions*** inside this module](https://github.com/Pei2023/cs50p_finalProject/blob/main/docs/_build/html/project.html)
-2. [Check ***unit test*** inside this module](https://github.com/Pei2023/cs50p_finalProject/blob/main/docs/_build/html/test_project.html)
 
 
