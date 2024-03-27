@@ -27,7 +27,7 @@ Calculate the font size: $\sqrt{(unifiedImageWidth * unifiedImageHeight) / 593.4
 
 
 ### ***Documentation***
-1. [Check the ***functions*** inside this module](docs/_build/html/project.html)
-2. [Check ***unit test*** inside this module](docs/_build/html/test_project.html)
+1. [Check the ***functions*** inside this module](https://github.com/Pei2023/cs50p_finalProject/blob/main/docs/_build/html/project.html)
+2. [Check ***unit test*** inside this module](https://github.com/Pei2023/cs50p_finalProject/blob/main/docs/_build/html/test_project.html)
 
 
