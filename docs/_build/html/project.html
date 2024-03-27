@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>project module &mdash; Write Stories with Pillow  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="test_project module" href="test_project.html" />
+    <link rel="prev" title="finalProject" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Write Stories with Pillow
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">finalProject</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">project module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#project.adjust_image_sizes"><code class="docutils literal notranslate"><span class="pre">adjust_image_sizes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.check_photo_directories_and_sizes"><code class="docutils literal notranslate"><span class="pre">check_photo_directories_and_sizes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.combine_image_descriptions"><code class="docutils literal notranslate"><span class="pre">combine_image_descriptions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.connect_images"><code class="docutils literal notranslate"><span class="pre">connect_images()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.create_description_objects"><code class="docutils literal notranslate"><span class="pre">create_description_objects()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.get_description_texts"><code class="docutils literal notranslate"><span class="pre">get_description_texts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.get_min_sizes"><code class="docutils literal notranslate"><span class="pre">get_min_sizes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.get_new_image_name"><code class="docutils literal notranslate"><span class="pre">get_new_image_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project.set_font_size"><code class="docutils literal notranslate"><span class="pre">set_font_size()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test_project.html">test_project module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Write Stories with Pillow</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">finalProject</a></li>
+      <li class="breadcrumb-item active">project module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/project.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-project">
+<span id="project-module"></span><h1>project module<a class="headerlink" href="#module-project" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="project.adjust_image_sizes">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">adjust_image_sizes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directories</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.adjust_image_sizes" title="Link to this definition"></a></dt>
+<dd><p>Crop each image into the unified size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>directories</strong> (<em>tuple</em><em> of </em><em>str</em>) – A tuple containing the four directories of images.</p></li>
+<li><p><strong>min_width</strong> (<em>int</em>) – The minimum width among four images. It’s used to unify the width of four images.</p></li>
+<li><p><strong>min_height</strong> (<em>int</em>) – The minium height among four images. It’s used to unify the height of of four images.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list containing four images which size are unified.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of image objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.check_photo_directories_and_sizes">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">check_photo_directories_and_sizes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.check_photo_directories_and_sizes" title="Link to this definition"></a></dt>
+<dd><p>Ensure user specify the directory/filename of images when executing the program. Verify that the specified directory exists and that the images meet the required size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>FileNotFoundError</strong> – If the directory/filename of image doesn’t exist.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the four directories of images.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.combine_image_descriptions">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">combine_image_descriptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cropped</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">descriptions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unified_height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.combine_image_descriptions" title="Link to this definition"></a></dt>
+<dd><p>Paste the text regions onto the images.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cropped</strong> (<em>list</em><em> of </em><em>image objects</em>) – A list containing four images with unified sizes.</p></li>
+<li><p><strong>descriptions</strong> (<em>list</em><em> of </em><em>description objects</em>) – A list containing four description objects for the text regions.</p></li>
+<li><p><strong>unified_height</strong> (<em>int</em>) – The unified height of the images.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list containing four image objects composed of images and text regions.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of image objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.connect_images">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">connect_images</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combined</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.connect_images" title="Link to this definition"></a></dt>
+<dd><p>Connect four image objects composed of images and text regions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>combined</strong> (<em>list</em><em> of </em><em>image objects</em>) – A list containing four image objects composed of images and text regions.</p></li>
+<li><p><strong>width</strong> (<em>int</em>) – The unified width of each image object</p></li>
+<li><p><strong>height</strong> (<em>int</em>) – The unified height of each image object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The final combined image object</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>image object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.create_description_objects">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">create_description_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">texts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img_width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img_height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.create_description_objects" title="Link to this definition"></a></dt>
+<dd><p>Create four description objects for text regions, each of wich composef of transparent black background and white text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>texts</strong> (<em>list</em><em> of </em><em>str</em>) – A list containing four description texts.</p></li>
+<li><p><strong>img_width</strong> (<em>int</em>) – The unified width of the images, and it’s used to define the width of the text region.</p></li>
+<li><p><strong>img_height</strong> (<em>int</em>) – The unified height of the images, and it’s used to define the height of the text region.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list containing four description objects for the text region.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of description objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.get_description_texts">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">get_description_texts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.get_description_texts" title="Link to this definition"></a></dt>
+<dd><p>Prompt user for entering the description of each image and verify the word number doesn’t exceed the limitation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>int</em>) – Width of unified image size.</p></li>
+<li><p><strong>height</strong> (<em>int</em>) – Height of unified image size.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list containing four description texts.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.get_min_sizes">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">get_min_sizes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directories</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.get_min_sizes" title="Link to this definition"></a></dt>
+<dd><p>Find the minimum width and minimum height among the four images.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>directories</strong> (<em>tuple</em>) – A tuple containing the four directories of images.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the minimum width and minimum height.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.get_new_image_name">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">get_new_image_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.get_new_image_name" title="Link to this definition"></a></dt>
+<dd><p>Prompt user for naming the new image file. Only alphabet, number and underscore are allowed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The name of the new output image.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.main">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#project.main" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="project.set_font_size">
+<span class="sig-prename descclassname"><span class="pre">project.</span></span><span class="sig-name descname"><span class="pre">set_font_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#project.set_font_size" title="Link to this definition"></a></dt>
+<dd><p>Set the font size.
+To ensure proportionality between the image size and font size, the ratio between the image and font is set to 593.4. This means that the size of images is 593.4 times larger than the size of one character.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>int</em>) – Width of the unified image size.</p></li>
+<li><p><strong>height</strong> (<em>int</em>) – Height of the unified image size.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The font size of each character</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="finalProject" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="test_project.html" class="btn btn-neutral float-right" title="test_project module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, P.Y..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
